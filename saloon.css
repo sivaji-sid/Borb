@@ -1,0 +1,289 @@
+*{
+	margin: 0%;
+	padding: 0%;
+	font-family: 'Akaya Kanadaka', cursive;
+}
+.demo{
+	height: 100vh;
+    width: 100%;
+    background-size: 100% 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),#009688),url('C:/Users/user/Pictures/Barber_Shop_img/banner.jpg');
+}
+.logo{
+	width: 140px;
+	height: 40px;
+	margin-top: 30px;
+	padding-left: 30px;
+}
+.banner-head{
+	text-align: center;
+	color: white;
+}
+.banner-head h1{
+	font-size: 100px;
+}
+.banner-head  p{
+	font-size: 30px;
+	font-style: italic
+}
+.button{
+	text-align: center;
+	padding: 40px;
+}
+.button a{
+	text-decoration: none;
+	padding: 10px;
+}
+.button a:hover{
+	color: pink;
+}
+.button a:active{
+	color: red;
+}
+.demo1{
+	width: 250px;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	right: -250px;
+	background: #009688;
+	z-index: 2;
+	transition: 0.5s
+}
+.demo1 ul{
+	display: inline-block;
+ }
+.demo1 ul li{
+	list-style-type: none;
+	margin: 50px 20px;
+}
+.demo1 ul li a{
+	display: inline-block;
+	text-decoration: none;
+}
+.demo2{
+	width: 50px;
+	height: 50px;
+	background: #009688;
+	text-align:center;
+	position: fixed;
+	right: 30px;
+	top: 20px;
+	border-radius: 3px;
+	z-index: 3;
+	cursor: pointer;
+}
+.demo2 img{
+	width: 20px;
+	margin-top: 15px
+}
+@media screen and (max-width: 770px){
+	.banner-head h1{
+		font-size: 30px;
+	 }
+}
+/*Features*/
+#feature{
+	width: 100%;
+	padding: 70px 0;
+}
+.demo3{
+	text-align:center;
+	padding-bottom: 70px;
+}
+.demo3 p{
+	margin: auto;
+	font-size: 20px;
+	color: #009688;
+	font-weight: bold;
+	position: relative;
+	z-index: 1; 
+	display: inline-block;
+}
+.demo3 p::after{
+	content: '';
+	width: 50px;
+	height: 35px;
+	background: linear-gradient(#019587,#fff);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transform: rotate(10deg);
+	border-top-left-radius: 35px;
+	border-bottom-right-radius: 35px;
+
+}
+.demo3 h1{
+	font-size: 30px;
+}
+.feature-box{
+	width: 80%;
+	margin: auto;
+	display: flex;
+ 	flex-wrap: wrap;
+	align-items: center;
+	text-align: center;
+	 
+}
+.features{
+	flex-basis: 50%;
+}
+.feature-img{
+	flex-basis: 50%;
+	margin: auto;
+}
+.feature-img img{
+	width: 70%;
+	border-radius: 10px
+}
+ .features h1{
+	text-align: left;
+	margin-bottom: 10px;
+	font-weight: 100;
+	color: #009688;
+}
+.feature-desc{
+	display:flex;
+	align-items: center;
+	margin-bottom: 40px;
+	font-style: italic;
+}
+@media screen and (max-width: 770px){
+	.demo3 h1{
+	font-size: 20px;
+}
+	.features{
+	flex-basis: 100%;
+}
+.feature-img{
+	flex-basis: 100%;
+	margin: auto;
+}
+.feature-img img{
+	width: 100%;
+	 
+}
+}
+/*service*/
+#service{
+	width: 100%;
+	padding:70px 0;
+}
+.service-box{
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin:auto;
+}
+.single-service{
+	flex-basis: 48%;
+	text-align: center;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	color: #fff;
+
+}
+.single-service img{
+	width: 100%;
+	border-radius: 7px
+}
+@media screen and (max-width: 770px){
+	.single-service{
+		flex-basis: 100%
+	}
+}
+
+/*Testimonal*/
+#testimonial{
+	width: 100%;
+	padding:70px 0;
+}
+.Testimonial-row{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+ }
+ .testimonial-col{
+ 		flex-basis: 28%;
+ 		padding: 10px;
+ 		margin-bottom: 30px;
+ 		border-radius: 5px;
+ 		box-shadow: 0 10px 20px 3px #0968814;
+ 		cursor: pointer;
+ 		transition: transform .5s;
+ }
+ .testimonial-col
+  p{
+ 	font-size: 14px;
+ }
+.user{
+	display: flex;
+	align-items: center;
+	margin:20px 0;
+}
+.user img{
+	width: 40px;
+	margin-right: 20px;
+	border-radius: 3px;
+}
+.user-info .fa{
+	margin-left: 10px;
+	color: #27c0ff;
+	font-size: 20px;
+}
+.user-info small{
+	color: #009688;
+}
+.testimonial-col :hover{
+	transform: translateY(-7px);
+}
+@media screen and (max-width: 770px){
+	.testimonial-col{
+		flex-basis: 100%;
+	}
+}
+/*footer*/
+#footer{
+	padding: 100px 0 20px;
+	background: #efefef;
+	position: relative;
+}
+.footer-row{
+	width: 80%;
+	margin:0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.footer-left,.footer-right{
+	flex-basis: 45%;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.footer-right{
+	text-align:right;
+}.footer-row h1{
+	margin:10px 0;
+}
+.footer-row p{
+	line-height: 35px;
+}
+.footer-img{
+	max-width: 370px;
+	opacity: 0.1;
+	position: absolute;
+	left: 50%
+	top:35%;
+	transform: translate(-50%,-50%);
+}
+@media screen and (max-width: 770px){
+	.footer-left,.footer-right{
+		flex-basis: 100%;
+		font-size: 20px
+	}
+}
