@@ -7,7 +7,7 @@
 	height: 100vh;
     width: 100%;
     background-size: 100% 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.5),#009688),url('C:/Users/user/Pictures/Barber_Shop_img/banner.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5),#009688),url('photos/banner.jpg');
 }
 .logo{
 	width: 140px;
